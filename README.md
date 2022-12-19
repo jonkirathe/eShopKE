@@ -6,6 +6,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## JSON Server
+
+Run `json-server --watch employees.json live-server` for a dev mock server. Navigate to `http://localhost:3000/`.
+
+![alt text](https://github.com/Jonnykratz/readme-images/blob/main/2022-12-19_172602_localhost.png)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
