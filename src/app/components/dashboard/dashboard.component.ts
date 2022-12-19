@@ -31,7 +31,7 @@ import {Subject} from "rxjs";
     </div>
   `,
   styles: [],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
 })
 export class DashboardComponent implements OnInit {
   showCart: boolean = false;

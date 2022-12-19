@@ -63,7 +63,7 @@ import {Subject} from "rxjs";
   standalone: true,
   imports: [CommonModule, TableComponent, TableHeaderTemplateDirective, TableRowTemplateDirective],
   styles: [],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
 })
 export class CartComponent implements OnInit, OnDestroy {
   cartItems: Product[] = [];

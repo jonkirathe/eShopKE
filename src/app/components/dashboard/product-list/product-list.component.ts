@@ -39,7 +39,7 @@ import {loadProducts} from "../../../store/product/product.action";
     </div>
   `,
   styles: [],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
 })
 export class ProductListComponent implements OnChanges, OnInit {
 

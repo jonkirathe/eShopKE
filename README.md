@@ -12,6 +12,8 @@ Run `json-server --watch employees.json live-server` for a dev mock server. Navi
 
 ![alt text](https://github.com/Jonnykratz/readme-images/blob/main/2022-12-19_172602_localhost.png)
 
+![alt text](https://github.com/Jonnykratz/readme-images/blob/main/2022-12-19_175141_localhost.png)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
