@@ -4,6 +4,10 @@
   <img src="https://github.com/Jonnykratz/readme-images/blob/main/eShopKE.gif?raw=true" alt="eShopKE Demo" width="700" height="400" />
 </p>
 
+###  Description
+About
+In this project we have used Angular 15+ utilizing standalone architect together with NGRX to manage state. We have also used RXJS observables in order to receive data via httpClient.
+
 #### The main features: 
 1. There are Product and Cart Components. 
 2. The products can be added to the cart what either create new cart item or increment the quantity of existing one. 
