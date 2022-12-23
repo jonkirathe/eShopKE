@@ -17,35 +17,28 @@
 4. Use the components styled by material, bootstrap look.
 5. Anything else? 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+# Installation
 
-## Development server
+1.  Angular CLI
+    - [Download Angular CLI](https://cli.angular.io/)
+2.  NodeJs
+    - [Download Nodejs](https://nodejs.org/en/download/)
+3.  Package Manager - NPM / Yarn
+4.  Clone the repository and run `npm install` if you use **npm** as package manager or `yarn install` if you use **yarn** as package manager.
+5.  Run Angular developer server
+  # Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+     Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## JSON Server
+6.  Run the Server.
+  # JSON Server
 
-Run `json-server --watch employees.json live-server` for a dev mock server. Navigate to `http://localhost:3000/`.
+      Run `json-server --watch employees.json live-server` for a dev mock server. Navigate to `http://localhost:3000/`.
 
-## Code scaffolding
+## How can I support the developer ?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Star my Github repo ⭐
+- Create pull requests, submit bugs, suggest new features or documentation updates 🛠
 
 ## Stay in touch
 
