@@ -11,7 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 Run `json-server --watch employees.json live-server` for a dev mock server. Navigate to `http://localhost:3000/`.
 
 <p align="center">
-  <img src="assets/eShopKE.gif?raw=true" alt="eShopKE Demo" width="459" />
+  <img src="https://github.com/Jonnykratz/readme-images/blob/main/eShopKE.gif?raw=true" alt="eShopKE Demo" width="459" />
 </p>
 
 ## Code scaffolding
