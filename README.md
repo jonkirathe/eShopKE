@@ -1,7 +1,7 @@
 # EShopKE
 
 <p align="center">
-  <img src="https://github.com/Jonnykratz/readme-images/blob/main/eShopKE.gif?raw=true" alt="eShopKE Demo" width="700" height="600" />
+  <img src="https://github.com/Jonnykratz/readme-images/blob/main/eShopKE.gif?raw=true" alt="eShopKE Demo" width="700" height="400" />
 </p>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
