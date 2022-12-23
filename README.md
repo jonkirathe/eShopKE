@@ -1,5 +1,9 @@
 # EShopKE
 
+<p align="center">
+  <img src="https://github.com/Jonnykratz/readme-images/blob/main/eShopKE.gif?raw=true" alt="eShopKE Demo" width="700" height="600" />
+</p>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
 ## Development server
@@ -9,10 +13,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## JSON Server
 
 Run `json-server --watch employees.json live-server` for a dev mock server. Navigate to `http://localhost:3000/`.
-
-<p align="center">
-  <img src="https://github.com/Jonnykratz/readme-images/blob/main/eShopKE.gif?raw=true" alt="eShopKE Demo" width="459" />
-</p>
 
 ## Code scaffolding
 
