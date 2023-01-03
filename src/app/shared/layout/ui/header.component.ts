@@ -1,7 +1,4 @@
-import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {Component, OnDestroy, OnInit} from "@angular/core";
-import {RouterModule} from "@angular/router";
-import {SearchComponent} from "../../search/search.component";
 import {CartService} from "../../../services/cart.service";
 import {takeUntil} from "rxjs/operators";
 import {Subject} from "rxjs";
@@ -19,9 +16,9 @@ import {Subject} from "rxjs";
             <a style="color: darkgoldenrod">KE</a>
           </a>
         </div>
-        <div class="d-flex align-items-center">
+        <div  class="d-flex align-items-center">
           <!-- Icon -->
-          <button (click)="setShowCart()" class="text-reset me-3 border-0">
+          <button (click)="setShowCart(showCart = true)" class="text-reset me-3 border-0">
             <span class="badge rounded-pill badge-notification bg-danger">{{totalItem}}</span>
             <i class="fa fa-shopping-cart"></i>
           </button>
@@ -31,7 +28,7 @@ import {Subject} from "rxjs";
     </nav>
   `,
   styles: [],
-  imports: [RouterModule, CommonModule, NgOptimizedImage, SearchComponent],
+  imports: [],
 })
 export class HeaderComponent implements OnInit, OnDestroy {
 
@@ -49,8 +46,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
     });
   }
 
-  setShowCart() {
-    this.cartService.showCart.next(true);
+  setShowCart(value: any) {
+    this.cartService.showCart.next(value);
   }
 
   ngOnDestroy(): void {

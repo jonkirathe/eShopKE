@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {ChangeDetectionStrategy, Component, EventEmitter, Output} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from "@angular/forms";
 import {SearchDirective} from "../../directives/search.directive";
@@ -6,6 +6,7 @@ import {SearchDirective} from "../../directives/search.directive";
 @Component({
   selector: 'app-search',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, FormsModule, SearchDirective],
   template: `
           <form  class="d-flex input-group w-auto">

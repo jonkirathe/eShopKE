@@ -13,6 +13,7 @@ import {loadProducts} from "../../../store/product/product.action";
 @Component({
   selector: 'app-product-list',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, CategoryComponent, CardComponent, SearchComponent, SearchDirective],
   encapsulation: ViewEncapsulation.None, //while using None all child comp will use this css style
   template: `
@@ -39,7 +40,6 @@ import {loadProducts} from "../../../store/product/product.action";
     </div>
   `,
   styles: [],
-  changeDetection: ChangeDetectionStrategy.Default,
 })
 export class ProductListComponent implements OnChanges, OnInit {
 

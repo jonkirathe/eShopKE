@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CartService {
 
@@ -14,7 +14,7 @@ export class CartService {
   constructor() { }
 
   getProducts() {
-    return this.productList.asObservable();
+    return this.productList;
   }
 
   addToCart(product : any){

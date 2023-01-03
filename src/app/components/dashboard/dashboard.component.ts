@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ProductListComponent} from "./product-list/product-list.component";
 import {CategoryComponent} from "../../shared/category/category.component";
@@ -31,9 +31,8 @@ import {Subject} from "rxjs";
     </div>
   `,
   styles: [],
-  changeDetection: ChangeDetectionStrategy.Default,
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit, OnDestroy {
   showCart: boolean = false;
   private $unSubscribe = new Subject<void>();
 

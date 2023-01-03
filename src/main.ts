@@ -1,10 +1,9 @@
-import {provideRouter, Route, RouterModule} from "@angular/router";
+import {provideRouter, Route} from "@angular/router";
 import {AppComponent} from "./app/app.component";
 import {bootstrapApplication} from "@angular/platform-browser";
 import { provideHttpClient } from "@angular/common/http";
 import {provideEffects, provideRouterStore, provideStore, provideStoreDevtools} from "./app/standalone-ngrx";
 import {routerReducer} from "@ngrx/router-store";
-import {importProvidersFrom} from "@angular/core";
 
 const appRoutes: Route[] = [
   {
@@ -16,8 +15,8 @@ const appRoutes: Route[] = [
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideRouter(appRoutes), provideHttpClient(),
-    importProvidersFrom(RouterModule.forRoot(appRoutes)),
+    provideRouter(appRoutes),
+    provideHttpClient(),
     provideStore({ router: routerReducer }),
     provideRouterStore(),
     provideStoreDevtools(),

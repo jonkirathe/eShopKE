@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {Product} from "../../models/product";
 import {CardImageDirective} from "../../directives/card-image.directive";
@@ -7,6 +7,7 @@ import {CartService} from "../../services/cart.service";
 @Component({
   selector: 'app-card',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, NgOptimizedImage, CardImageDirective],
   template: `
     <div cardImage class="row card " style=" width: 250px;">
