@@ -1,35 +1,55 @@
 # EShopKE
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+<p align="center">
+  <img src="https://github.com/Jonnykratz/readme-images/blob/main/eShopKE.gif?raw=true" alt="eShopKE Demo" width="700" height="400" />
+</p>
 
-## Development server
+###  Description
+About
+In this project we have used Angular 15+ utilizing standalone architect together with NGRX to manage state. We have also used RXJS observables in order to receive data via httpClient.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### The main features: 
+1. There are Product and Cart Components. 
+2. The products can be added to the cart what either create new cart item or increment the quantity of existing one. 
+3. The cart items can be removed. 
+4. Total cost of cart items and the whole cart total are calculated upon undates in cart items.
 
-## JSON Server
+#### The possible improvements: 
+1. Offline cart (saving the state in the localStorage)
+2. Test coverage, inputs validation, error handlings 
+3. Track how many product items are left on storage. Do not add the finished product. 
+4. Use the components styled by material, bootstrap look.
+5. Anything else? 
 
-Run `json-server --watch employees.json live-server` for a dev mock server. Navigate to `http://localhost:3000/`.
+# Installation
 
-![alt text](https://github.com/Jonnykratz/readme-images/blob/main/2022-12-19_172602_localhost.png)
+1.  Angular CLI
+    - [Download Angular CLI](https://cli.angular.io/)
+2.  NodeJs
+    - [Download Nodejs](https://nodejs.org/en/download/)
+3.  Package Manager - NPM / Yarn
+4.  Clone the repository and run `npm install` if you use **npm** as package manager or `yarn install` if you use **yarn** as package manager.
+5.  Run Angular developer server
+  # Development server
 
-![alt text](https://github.com/Jonnykratz/readme-images/blob/main/2022-12-19_175141_localhost.png)
+     Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+6.  Run the Server.
+  # JSON Server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+      Run `json-server --watch employees.json live-server` for a dev mock server. Navigate to `http://localhost:3000/`.
 
-## Build
+## How can I support the developer ?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Star my Github repo ⭐
+- Create pull requests, submit bugs, suggest new features or documentation updates 🛠
 
-## Running unit tests
+## Stay in touch
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Author - [John Kirathe](https://twitter.com/kirathendegwa)
+* Twitter - [@kirathendegwa](https://twitter.com/kirathendegwa)
+* LinkedIn - [john-kirathe-15a54570](https://www.linkedin.com/in/john-kirathe-15a54570/)
 
-## Running end-to-end tests
+## License
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+eShopKE is [MIT licensed](LICENSE).
