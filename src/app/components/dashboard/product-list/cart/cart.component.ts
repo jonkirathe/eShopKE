@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnDestroy, OnInit} from '@angular/core';
+import { Component, OnDestroy, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {
   TableComponent,
@@ -63,7 +63,6 @@ import {Subject} from "rxjs";
   standalone: true,
   imports: [CommonModule, TableComponent, TableHeaderTemplateDirective, TableRowTemplateDirective],
   styles: [],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CartComponent implements OnInit, OnDestroy {
   cartItems: Product[] = [];

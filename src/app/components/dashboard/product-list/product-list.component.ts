@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnChanges, OnInit, SimpleChanges, ViewEncapsulation} from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {Product} from "../../../models/product";
 import {CategoryComponent} from "../../../shared/category/category.component";
@@ -17,9 +17,7 @@ import {loadProducts} from "../../../store/product/product.action";
   imports: [CommonModule, CategoryComponent, CardComponent, SearchComponent, SearchDirective],
   encapsulation: ViewEncapsulation.None, //while using None all child comp will use this css style
   template: `
-    <app-category [products]="products" (radioButtonChanged)="radioButtonChanged($event)" [all]="total"
-                  [electronics]="electronicsTotal" [jewelery]="jeweleryTotal"
-                  [clothing]="clothingTotal">
+    <app-category (radioButtonChanged)="radioButtonChanged($event)">
     </app-category>
     <div class="container">
       <div class="row justify-content-center p-2">
@@ -41,29 +39,16 @@ import {loadProducts} from "../../../store/product/product.action";
   `,
   styles: [],
 })
-export class ProductListComponent implements OnChanges, OnInit {
+export class ProductListComponent implements OnInit {
 
   products!: Product[];
   $products = this.store.select(selectAllProducts);
   selectedRadioButtonValue: string = 'All';
-  total: number = 0;
-  clothingTotal: number = 0;
-  jeweleryTotal: number = 0;
-  electronicsTotal: number = 0;
   searchValue: string = '';
  constructor(private store: Store<AppState>) {
  }
   radioButtonChanged(value: string) {
     this.selectedRadioButtonValue = value;
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if(this.products){
-      this.total = this.products.length;
-      this.clothingTotal = this.products.filter(product => product.category === 'clothing').length;
-      this.jeweleryTotal = this.products.filter(product => product.category === 'jewelery').length;
-      this.electronicsTotal = this.products.filter(product => product.category === 'electronics').length;
-    }
   }
 
   ngOnInit(): void {

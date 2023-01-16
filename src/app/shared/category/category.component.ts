@@ -14,35 +14,28 @@ import {Product} from "../../models/product";
       <input type="radio" name="filter" value="All"
              [(ngModel)]="selectedRadioButtonValue"
              (change)="onRadioButtonChanged()">
-      <span class="p-2">{{'All Products('+all+')'}}</span>
+      <span class="p-2">{{'All Products'}}</span>
 
       <input type="radio" name="filter" value="clothing"
              [(ngModel)]="selectedRadioButtonValue"
              (change)="onRadioButtonChanged()">
-      <span class="p-2">{{'Clothing('+clothing+')'}}</span>
+      <span class="p-2">{{'Clothing'}}</span>
 
       <input type="radio" name="filter" value="jewelery"
              [(ngModel)]="selectedRadioButtonValue"
              (change)="onRadioButtonChanged()">
-      <span class="p-2">{{'Jewelery('+jewelery+')'}}</span>
+      <span class="p-2">{{'Jewelery'}}</span>
 
       <input type="radio" name="filter" value="electronics"
              [(ngModel)]="selectedRadioButtonValue"
              (change)="onRadioButtonChanged()">
-      <span class="p-2">{{'Electronics('+electronics+')'}}</span>
+      <span class="p-2">{{'Electronics'}}</span>
     </div>
   `,
   styles: [
   ]
 })
 export class CategoryComponent {
-  @Input() all: number = 0;
-  @Input() clothing = 0;
-  @Input() jewelery = 0;
-  @Input() electronics = 0;
-
-  @Input() products!: Product[];
-
   selectedRadioButtonValue: string = 'All';
 
   @Output()
