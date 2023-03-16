@@ -66,5 +66,6 @@ jobs:
          uses: github/codeql-action/upload-sarif@v2
          with:
           sha: ethicalcheck-results.sarif
+          ref: ethicalcheck-results.sarif
           wait-for-processing: true
 
