@@ -6,7 +6,8 @@ import {Product} from "../models/product";
 @Injectable({providedIn: 'root'})
 export class ApiService {
 
-  url = 'http://localhost:3000';
+  //url = 'http://localhost:3000';
+  url = 'https://json-server-eshopke.vercel.app';
 
   constructor( private http: HttpClient) {}
 
