@@ -1,5 +1,6 @@
 # EShopKE
 
+Live Demo: https://e-shop-ke.vercel.app/dashboard
 <p align="center">
   <img src="https://github.com/Jonnykratz/readme-images/blob/main/eShopKE.gif?raw=true" alt="eShopKE Demo" width="700" height="400" />
 </p>
