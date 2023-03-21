@@ -42,6 +42,7 @@ In this project we have used Angular 15+ utilizing standalone architect together
 
 ## How can I support the developer ?
 
+- But me a Beer https://www.buymeacoffee.com/johnkirathe
 - Star my Github repo ⭐
 - Create pull requests, submit bugs, suggest new features or documentation updates 🛠
 
