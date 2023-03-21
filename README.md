@@ -38,7 +38,7 @@ In this project we have used Angular 15+ utilizing standalone architect together
 6.  Run the Server.
   # JSON Server
 
-      Run `json-server --watch employees.json live-server` for a dev mock server. Navigate to `http://localhost:3000/`.
+      Run `json-server --watch database.json live-server` for a dev mock server. Navigate to `http://localhost:3000/`.
 
 ## How can I support the developer ?
 
